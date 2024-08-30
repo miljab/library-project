@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="books"></div>
+    </div>
+
+    <dialog>
+        <div class="dialog-content">
+            <form class="add-book-form">
+                <div class="form-input">
+                    <label for="title">Title: </label>
+                    <input type="text" name="title" id="title" autofocus required>
+                </div>
+                <div class="form-input">
+                    <label for="author">Author: </label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="form-input">
+                    <label for="pages">Pages: </label>
+                    <input type="number" name="pages" id="pages" required>
+                </div>
+                <div class="form-radio">
+                    <p>Have you read this book?</p>
+                    <input type="radio" id="answear-true" name="read_status" value="true">
+                    <label for="answear-true">Yes</label>
+                    <input type="radio" id="answear-false" name="read_status" value="false" checked>
+                    <label for="answear-false">No</label>
+                </div>
+                <button type="submit" class="submit-button">ADD BOOK</button>
+                <button type="button" class="cancel-button">CANCEL</button>
+            </form>
+        </div>
+    </dialog>
+</body>
+</html>
